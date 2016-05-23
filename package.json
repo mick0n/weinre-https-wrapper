@@ -1,0 +1,19 @@
+{
+	"name": "weinre-https-wrapper",
+	"version": "0.9.0",
+	"description": "Enables weinre through https",
+	"main": "src/weinre-https-wrapper.js",
+	"scripts": {
+		"start": "node src/weinre-https-wrapper.js"
+	},
+	"keywords": [
+		"Weinre",
+		"Https"
+	],
+	"author": "Mikael Norrman",
+	"license": "SEE LICENSE IN FILE LICENSE",
+	"dependencies": {
+		"http-proxy": "^1.13.3",
+		"weinre": "^2.0.0-pre-I0Z7U9OV"
+	}
+}
