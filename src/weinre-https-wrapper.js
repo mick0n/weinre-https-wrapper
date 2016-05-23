@@ -8,15 +8,16 @@ var weinreOptions = {
 	boundHost: 'localhost',
 	verbose: false,
 	debug: false,
-	readTimeout: 30,
-	deathTimeout: 30
+	readTimeout: 5,
+	deathTimeout: 15
 };
 weinre.run(weinreOptions);
 
 var options = {
 	target: {
 		https: true
-	}
+	},
+	ws: true
 };
 var proxy = httpProxy.createServer({
 	target: {
