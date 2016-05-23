@@ -30,5 +30,8 @@ var proxy = httpProxy.createServer({
 }).listen(Config.port);
 
 proxy.on('error', function(error) {
-	console.error(error);
+	if (error.code !== 'ECONNRESET') {
+		throw error;
+	}
+	//Swallow socket hang up messages
 });
